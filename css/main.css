@@ -24,7 +24,7 @@ body {
   justify-content: flex-end;
 }
 .header {
-  background-image: url('../images/FotoCarnet-Reducida.jpeg');
+  background-image: url('../pictures/foto-perfil.jpg');
   background-size: cover;
   background-position: -50px 0%; /*55% 50%*/
   position: fixed;
