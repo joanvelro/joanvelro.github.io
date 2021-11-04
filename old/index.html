@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+}
+.flex-container-vert {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.flex-container-hor {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+.flex-item {
+  margin-left:10px;
+  margin-right:30px;
+  max-width: 250px;
+  background-color: ;
+  float: center;
+
+}
+
+.flex-item-body {
+  max-width:800px;
+  margin-right: 15px;
+  margin-left: 15px;
+
+}
+}
+.flex-item-bckg {
+  max-height: 80%;
+  margin-right: 10px;
+
+}
+.flex-item-body-right {
+  margin:10px;
+  margin-right:80px;
+ 
+  background-color: ;
+  text-align: right!important;
+}
+.flex-item-body-bullet-small {
+  margin:5px;
+  margin-right:10px;
+ 
+  background-color: ;
+}
+.flex-item-body-bullet-large {
+  margin:5px;
+  margin-right:10px;
+  background-color: ;
+}
+
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 35px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h2 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+  
+h4 {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 15.4px;
+}
+p {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 20px;
+
+}
+p.date {
+  font-family: Georgia, serif;
+  float: right;
+  color: grey;
+  font-size: 14px;
+}
+p.email {
+  font-family: Consolas, monaco, monospace;
+  float: left;
+  color: blue;
+  font-weight: 800;
+  font-size: 12px;
+}
+ul{
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 15px;
+  padding: 1px;  
+  padding-left: 35px;
+}
+li {
+  margin-bottom: 12px;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+.horizontalLine {
+  border-top : 2px solid;
+  margin-right:10px;
+}
+
+.verticalLine {
+  border-left: 4px solid black;
+  top: 0;
+  bottom: 0;
+  margin-right: 20px;
+}
+.verticalLine-slim {
+  border-left: 2px solid black;
+  top: 0;
+  bottom: 0;
+  margin-right: 10px;
+}
+.profile-image{
+  border: 2px solid;
+}
+</style>
+
+</head>
+
+<body>
+<div class = "flex">
+  <div class="flex-container">
+    <div class="flex-item">
+    	<div class="flex-container-vert">
+        <div class="flex-item">
+          <img class="profile-image" src="pictures/retrato-perfil1.JPG" alt ="An image of me" style="float:left;width:242px;height:242;">
+        </div>
+    		
+    		<div class="flex-item">
+    			<h2 >Contact</h2>
+            <p>IMDEA Software Institute<br/>
+               Office 342<br/>
+               Campus de Montegancedo s/n<br/>
+               28223 - Pozuelo de Alarcón<br/>
+               Madrid, Spain<br/><br/>
+               +34 91 101 2202 ext 4139<br/>
+               <p class="email">elena.gutierrez[at]imdea.org</p>
+            
+    		</div>
+    	</div>
+    </div>
+
+    <div class=verticalLine-slim></div>
+
+    <div class="flex-container-vert">
+      <!-- <div class="flex-item">
+            <img src="pictures/girasoles-recortada.jpg" alt ="La Hortezuela de Océn" style="float:center;width:700px">
+      </div> -->
+      <div class="flex-item-body">
+        <p class="date"><i>Last update: August, 2020</i></p>
+        <h1>Elena Gutiérrez</h1>
+        <h4>PhD. student @ IMDEA Software Institute (Madrid)</h4>
+
+        <h2>About me</h2>
+        <div class="horizontalLine">
+          <p> I am a 4th-year PhD. student at the <a href="https://software.imdea.org/index.html">IMDEA Software Institute</a> under the supervision of <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a>, expecting to graduate before October 2020.</p>
+          <p> Before joining IMDEA, I studied a Double Degree in Mathematics and Computer Science at <a href="http://www.uam.es/UAM/Home.htm?language=en">Universidad Autónoma de Madrid</a>.
+          <p> You can find further information about me in my <a href="CV202008.pdf">CV</a>.</p>
+        </div>
+
+        <h2>Some of my research interests</h2>
+         <div class="horizontalLine">
+          <div class="flex-container-hor">
+            <ul>
+              <li>Weighted automata and weighted context-free grammars and their applications to software verification and ML</li>
+              <li>Parikh abstraction and other regular approximations of context-free languages</li>
+            </ul>
+            <ul>
+               <li>Finite-state automata and optimization algorithms: minimization, residualization</li>
+              <li>Learning automata</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Internships</h2>
+        <div class="horizontalLine">
+             <ul >
+               <li><b>National Institute of Informatics (Tokyo)</b>. Under the supervision of Ichiro Hasuo. From May 2019 to Nov 2019.</li>
+               <li><b>IMDEA Software Institute (Madrid)</b>. Under the supervision of Pierre Ganty. Summers of 2013, 2014 and 2015.</li>
+              </ul>
+        </div>
+
+        <h2>Publications</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li>P. Ganty, E. Gutiérrez and P. Valero. <b>A Quasiorder-based Perspective on Residual Automata</b>. MFCS 2020. [<a href="https://arxiv.org/abs/2007.00359">arXiv</a>]</li>
+            <li>E. Gutiérrez, T. Okudono, M. Waga and I. Hasuo. <b>Genetic Algorithm for the Weighted Maximization Problem on Weighted Automata</b>. GECCO 2020. [<a href="https://arxiv.org/pdf/2004.06581">arXiv</a>]</li>
+            <li>P. Ganty, E. Gutiérrez and P. Valero. <b>A Congruence-based Perspective on Automata Minimization Algorithms</b>. MFCS 2019. [<a href="https://arxiv.org/pdf/1906.06194">arXiv</a>]</li>
+            <li> P. Ganty and E. Gutiérrez. <b>The Regular Property for Weighted Context-Free Grammars</b>. FSTTCS 2018. [<a href="https://arxiv.org/pdf/1810.01351">arXiv</a>]</li>
+            <li> P. Ganty and E. Gutiérrez. <b>Parikh Image of Pushdown Automata</b>. FCT 2017. [<a href="https://arxiv.org/pdf/1706.08315">arXiv</a>]</li>
+          </ul>
+            
+        </div>
+        <h2>Software</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li><b>GA for WFAs</b>. A genetic-algorithm-based metaheuristic for approximating the solution of the weight maximization problem on weighted automata  over the rationals. [<a href="https://github.com/elenagutiv/ga-wfas">Github project page</a>]</li></li>
+            <li><b>ELP</b>. A linearisation procedure for index-bounded sets of Horn clauses. [<a href="https://github.com/elenagutiv/Linearisation-2015">Github project page</a>]</li>
+        </div>
+        <h2>Bachelor's thesis</h2>
+        <div class="horizontalLine">
+          <ul>
+            <li><b>Linearisation of k-index bounded sets of Horn clauses</b>. Double Degree on Mathematics and Computer Science thesis, Universidad Autónoma de Madrid, May 2016. [<a href="tfg_ElenaGutierrezViedma.pdf">PDF</a>]</li>
+          <ul>
+      </div>
+      <div class="horizontalLine"></div>
+      <p> Copyright © 2017 Elena Gutiérrez</p>
+      </div>
+    </div>
+
+  <div class=verticalLine-slim></div>
+   
+  <div class="flex-container-vert">
+    <div class="flex-item-bckg">
+      <img src="pictures/girasoles-recortada-vert-4.jpeg" alt ="La Hortezuela de Océn" style="float:center;width:350px">
+    </div>
+  </div>
+
+  </div>   
+</div>
+
+</body>
+</html>

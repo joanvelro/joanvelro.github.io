@@ -1,236 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
-<body>
+<head>
+	<title>Elena Gutiérrez</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="#Education" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Education</a>
-    <a href="#Publications" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Publications</a>
-    <a href="#Contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">More <i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Projects</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-        <a href="#" class="w3-bar-item w3-button">Code</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#Education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Jose Angel</a>
-  <a href="#Publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#Contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+</head>
+<body id="page-top">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+	<nav class="navbar navbar-expand-md fixed-top" id="navId">
+		<span class="d-block d-lg-none"><h4>Elena Gutiérrez</h4></span>
+		
+		<span class="d-none d-lg-block">
+			
+			<h2 class="mr-5 ml-3 mt-2 mb-2">
+			Elena Gutiérrez, PhD
+			</h2>
+			<!-- <div class="subheading ml-5 mb-3 mr-5">
+                IMDEA Software Institute (Office 342) · Campus Montegancedo s/n · 28223 - Pozuelo de Alarcón · Madrid, Spain ·
+                <a class="email" href="mailto:elenagutiv@gmail.com">elenagutiv@gmail.com</a>
+            </div> -->			
+		</span>
+		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse" id="main-navigation">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#internships">Internships</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#publications">Publications</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#theses">Theses</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#software">Software</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+	</nav>
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>
-    </div>
-  </div>
+ 	
+	<div class="container-fluid p-0">
+		<div class="row mr-0 pr-0">
 
-  <!-- The Education Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="Education">
-    <h2 class="w3-wide">Jose Angel Velasco</h2>
-    <p class="w3-opacity"><i>PhD Data Scientist</i></p>
-    <p class="w3-justify">I am a technology-driven, enthusiastic and proactive PhD data scientist. I enjoy finding creative and innovative solutions to complex problems and bringing these solutions into reality. Passionate about crafting, implementing, and operating analytical solutions that have direct and measurable impact on the business problems.
-</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Deep Learning</p>
-        <img src="/images/ai.jpeg" class="w3-round w3-margin-bottom" alt="Deep Learning" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Big Data</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Big Data" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Analytics</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Analytics" style="width:60%">
-      </div>
-    </div>
-  </div>
+		    <div class="col-md-9 col-xs-12">
+		    	<div class="container-fluid p-0">
+		      	<!-- ABOUT -->
+			      	<section class="resume-section mysection" id="about">
 
-  <!-- The Publications Section -->
-  <div class="w3-black" id="Publications">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Publications</h2>
-      <p class="w3-opacity w3-center"><i>International Journals and conferences</i></p><br>
+				      	<div class="resume-section-content mb-3">
+				      		<!-- <p class="my-intro lead mt-5 ml-5">I would like to contribute to the solution and communication of the next generation of research challenges in the fields of program verification and/or machine learning. </p> -->
+		                    <p class="my-intro lead mt-5 ml-5"> I am a <b style="font-size: 15px; color: #000000"> Consultant @ Deloitte in the Artificial Intelligence Strategy Team</b>.</p>
+		                    <p class="my-intro lead ml-5 mb-4">I have a PhD in Software, Systems & Computing focused on mathematical models for software analysis, NLP and AI from <a href="https://www.upm.es/internacional">Universidad Politécnica de Madrid</a>. I completed my PhD while working at the <a href="https://software.imdea.org/">IMDEA Software Institute</a> in Madrid.  Before that, I studied a Double Degree in Mathematics and Software Engineering at <a href="http://www.uam.es/UAM/Home.htm?language=en">Universidad Autónoma de Madrid</a>. You can find further info about me in my <a href="CV202010.pdf">short CV</a>.</p>
+          					<!-- <p class="lead mb-4 ml-5"> You can find further information about me in my <a href="CV202008.pdf">CV</a>.</p></p> -->
+		                    
+		                </div>
+		                
+		                <div class="my-set-icons mb-4">
+		    					<span style="margin:15px;">
+		    						<a class="a-icon" href="https://www.linkedin.com/in/elena-guti%C3%A9rrez-viedma-857bb912b/" title="LinkedIn"><img class="nav-img my-icon" src="icons/linkedin.png"></a>
+		    					</span>
+		    					<span style="margin:15px;">
+		    						<a class="a-icon" href="https://github.com/elenagutiv/" title="GitHub"><img class="nav-img my-icon" src="icons/GitHub.png"></a>
+		    					</span>
+		    					<span style="margin:15px;">
+		    						<a class="a-icon" href="https://dblp.uni-trier.de/pid/202/2585.html" title="DBLP"><img class="nav-img my-icon" src="icons/dblp.png"></a>
+		    					</span>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Paper 1 <span class="w3-tag w3-red w3-margin-left">Publisehd</span></li>
-        <li class="w3-padding">Paper 2  <span class="w3-tag w3-red w3-margin-left">Publisehd</span></li>
-        <li class="w3-padding">Paper 3  <span class="w3-badge w3-right w3-margin-right">Under Review</span></li>
-      </ul>
+		    			</div>
+		    			
+	    				<!-- <h5 class="mb-3 ml-5 mt-3">Research Interests</h5>
+	    				<div class="row mb-4 mr-0 pr-0">
+	    					<div class="col-md-5 col-xs-12 ml-4 mr-0">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Program analysis & software verification</p>
+									</li>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Machine learning & artificial intelligence </p>
+									</li>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Natural language processing applications </p>
+									</li>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Weighted automata </p>
+									</li>
+									</ul>
+		                    </div> -->
+		                    <!-- <div class="col-md-6 col-xs-12 ml-4 mr-0">
+		                            <ul class="fa-ul">
+		                            
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Weighted automata </p>
+									</li>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Finite-state automata (FSA) & pushdown automata </p>
+									</li>
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="Madrid" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Madrid</b></p>
-            <p class="w3-opacity">June, 2019</p>
-            <p>CIRED</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See paper</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Edimbourg" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Edimbourg</b></p>
-            <p class="w3-opacity">Aug. 2018</p>
-            <p>ICEEE</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See paper</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="Glasgow" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Glasgow</b></p>
-            <p class="w3-opacity">Sept. 2018</p>
-            <p>UPEC</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">See paper</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Minimization, residualization of FSAs</p>
+									</li>
+									<li><i class="fa-li fa fa-check mt-0" style="color:#696969"></i><p class="mb-0" style="font-size: 15px"> Parikh abstraction of context-free languages</p>
+									</li>
+									</ul>
+		                    </div>
+		    			</div> -->
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32">
-        <span onclick="document.getElementById('ticketModal').style.display='none'"
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+		            </section>    		
+		      		
+				    <hr class="m-0" />
+				    <!-- Education-->
+		            <section class="resume-section mysection" id="education">
+		                <div class="resume-section-content">
+		                    <h2 class="mb-4 ml-5 mt-3">Education</h2>
+		                    <div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <h5 class="mb-0">PhD. in Software, Systems & Computing</h5>
+		                            <div class="subheading mb-3">Universidad Politécnica de Madrid and IMDEA Software Institute</div>
+		                    	</div>
+	                            <div class="flex-shrink-0"><span class="mytext-date">Sept. 2016 - Sept. 2020</span></div>
+		                        
+		                    </div>
+		                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <h5 class="mb-0">Double Degree in Mathematics & Software Engineering</h5>
+		                            <div class="subheading mb-3">Universidad Autónoma de Madrid</div>
+		                    	</div>
+	                            <div class="flex-shrink-0"><span class="mytext-date">Sept. 2011 - Sept. 2016</span></div>
+		                        
+		                    </div>
+		                </div>
+		            </section>
+				    <hr class="m-0" />
+				    <!-- Internships-->
+		            <section class="resume-section mysection" id="internships">
+		                <div class="resume-section-content">
+		                	<h2 class="mb-4 ml-5 mt-3">Internships</h2>
+		                	<!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <h5 class="mb-0">IMDEA Software Institute (Madrid)</h5>
+		                            <div class="subheading mb-3">Supervised by <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a></div>
+		                        </div>
+		                        <div class="flex-shrink-0"><span class="mytext-date">Sept 2016 - Present</span></div>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="Contact">
-    <h2 class="w3-wide w3-center">Contact</h2>
-    <p class="w3-opacity w3-center"><i>Contact details</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Madrid (Spain)<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +34 618 443 816<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: joseangel.velasco@yahoo.es<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
-    </div>
-  </div>
+	                    	</div> -->
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <h5 class="mb-0">National Institute of Informatics (Tokyo)</h5>
+		                            <div class="subheading mb-3">At the <a href="https://group-mmm.org/eratommsd/"> ERATO MMSD Project</a> (Metamathematics for Systems Design Project) under the supervision of Prof. <a href="https://group-mmm.org/~ichiro/index.html">Ichiro Hasuo</a></div>
+		                        </div>
+		                        <div class="flex-shrink-0"><span class="mytext-date">May 2019 - November 2019</span></div>
 
-<!-- End Page Content -->
-</div>
+	                    	</div>
+	                    	<div class="d-flex flex-column flex-md-row justify-content-between mb-5 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <h5 class="mb-0">IMDEA Software Institute (Madrid)</h5>
+		                            <div class="subheading mb-3">Supervised by Prof. <a href="http://software.imdea.org/~pierreganty/index.html">Pierre Ganty</a></div>
+		                        </div>
+		                        <div class="flex-shrink-0"><span class="mytext-date">Summers 2013 - 2015</span></div>  
+	                    	</div>
+				    	</div>
+				    </section>
+				    <hr class="m-0" />
+				    <!-- Publications-->
+		            <section class="resume-section mysection" id="publications">
+		                <div class="resume-section-content">
+		                	<h2 class="mb-4 ml-5 mt-3">Publications</h2>
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">A Quasiorder-Based Perspective on Residual Automata. </p>
+									<p class="mb-0" style="color: #808080;">Pierre Ganty, Elena Gutiérrez and Pedro Valero. <b style="font-size: 15px; color: #000000">MFCS 2020.</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="https://arxiv.org/abs/2007.00359" title="arXiv report"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        <a class="btn btn-light" href="slides/mfcs2020-pdf.pdf" title="slides"><i class="fa fa-file-photo-o" aria-hidden="true"></i> </a></div>
+		                        
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+	                    	</div>
+	                    	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">Genetic Algorithm for the Weight Maximization Problem on Weighted Automata. </p>
+									<p class="mb-0" style="color: #808080;" >Elena Gutiérrez, Takamasa Okudono, Masaki Waga and Ichiro Hasuo. <b style="font-size: 15px; color: #000000">GECCO 2020.</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="https://arxiv.org/abs/2004.06581" title="arXiv report"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        <a class="btn btn-light" href="slides/gecco2020-pdf.pdf" title="slides"><i class="fa fa-file-photo-o" aria-hidden="true"></i> </a></div>
+		                        
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+	                    	</div>
+	                    	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">A Congruence-Based Perspective on Automata Minimization Algorithms.</p>
+									<p class="mb-0" style="color: #808080;">Pierre Ganty, Elena Gutiérrez and Pedro Valero. <b style="font-size: 15px; color:#000000">MFCS 2019.</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="https://arxiv.org/abs/1906.06194" title="arXiv report"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        <a class="btn btn-light" href="slides/seminarLaBRI2020-pdf.pdf" title="slides"><i class="fa fa-file-photo-o" aria-hidden="true"></i> </a></div>
+		                        
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+	                    	</div>
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">The Parikh Property for Weighted Context-Free Grammars. </p>
+									<p style="color: #808080;">Pierre Ganty and Elena Gutiérrez. <b style="font-size: 15px; color:#000000">FSTTCS 2018.</b></p>							
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="https://arxiv.org/abs/1810.01351" title="arXiv report"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        <a class="btn btn-light" href="slides/fsttcs2018-pdf.pdf" title="slides"><i class="fa fa-file-photo-o" aria-hidden="true"></i> </a></div>
+		                        
+	                    	</div>
+	                    	<div class="d-flex flex-column flex-md-row justify-content-between mb-5 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">Parikh Image of Pushdown Automata.</p>
+									<p class="mb-0" style="color: #808080">Pierre Ganty and Elena Gutiérrez. <b style="font-size: 15px; color: #000000">FCT 2017.</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-1 ml-5"><a class="btn btn-light" href="https://arxiv.org/abs/1706.08315" title="arXiv report"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        <a class="btn btn-light" href="slides/fct2017.pdf" title="slides"><i class="fa fa-file-photo-o" aria-hidden="true"></i> </a></div>
+		                        
+	                    	</div> 	
+				    	</div>
+				    </section>
+				    <hr class="m-0" />
+		            <!-- Publications-->
+		            <section class="resume-section mysection" id="theses">
+		                <div class="resume-section-content">
+		                	<h2 class="mb-4 ml-5 mt-3">Theses</h2>
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">New Perspectives on Classical Automata Constructions. </p>
+									<p class="mb-0" style="color: #808080;">Elena Gutiérrez. <b style="font-size: 15px; color: #000000">Ph.D. Thesis (Sept.,2020).</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="theses/thesis.pdf" title="PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000);
-}
+	                    		</div>
+	                    	</div>
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-5 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-minus mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">Linearisation of k-index bounded sets of Horn clauses.</p>
+									<p class="mb-0" style="color: #808080;">Elena Gutiérrez. <b style="font-size: 15px; color: #000000">Final Degree Project (May, 2016).</b></p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0 ml-5"><a class="btn btn-light" href="theses/tfg_ElenaGutierrezViedma.pdf" title="PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> </a>
+		                        </div>        
+	                    	</div>
+	                    </div>
+	                </section>
+	                <hr class="m-0" />
+	                <!-- Software-->
+		            <section class="resume-section mysection" id="software">
+		                <div class="resume-section-content">
+		                	<h2 class="mb-4 ml-5 mt-3">Software</h2>
+		                	<div class="d-flex flex-column flex-md-row justify-content-between mb-1 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-circle mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">ga-wfas </p>
+									<p class="mr-4" style="font-size: 14px;">A genetic algorithm (in C) for approximating the solution of the weight maximization problem on weighted automata over rational numbers.</p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0"><a class="btn btn-light" href="https://github.com/elenagutiv/ga-wfas" title="GitHub project"><i class="fa fa-github" aria-hidden="true"></i> </a></div>
+		                    </div>
+		                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5 ml-5 mr-3">
+		                        <div class="flex-grow-1">
+		                            <ul class="fa-ul">
+									<li><i class="fa-li fa fa-circle mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">elp </p>
+									<p class="mr-4" style="font-size: 14px;">A procedure (in Prolog) for linearising index-bounded sets of Horn clauses.</p>
+									</li>
+									</ul>
+		                        </div>
+		                        <div class="flex-shrink-0"><a class="btn btn-light" href="https://github.com/elenagutiv/Linearisation-2015" title="GitHub project"><i class="fa fa-github" aria-hidden="true"></i> </a></div>
+		                    </div>
+		                </div>
+		            </section>
+		            <hr class="m-0" />
+				    <!-- Contact-->
+		            <section class="resume-section mysection" id="contact">
+		                <div class="resume-section-content">
+	                	<h2 class="mb-4 ml-5 mt-3">Contact</h2>
+	                	<!-- <div class="row mr-0 pr-0"> -->
+							<!-- <div class="col-md-6 col-xs-12 ml-5 mb-4">
+		                     	<dl class="row">
+								  <dt class="col-sm-3">Address</dt>
+								  <dd class="col-sm-9">IMDEA Software Institute, office 342 
+								  	<p class="mb-0">Campus de Montegancedo s/n</p>
+								  	<p class="mb-0">28223 - Pozuelo de Alarcón</p>
+								  	<p>Madrid, Spain</p>
+								  </dd>
+								</dl>
+		                    </div> -->
+		                    <div class="col-md-5 col-xs-12 mb-4 ml-4">
+		                    	<ul class="fa-ul">
+									<li><i class="fa-li fa fa-envelope" style="color:#696969"></i>
+									<p class="mb-0" style="font-size: 17px">[name]gutiv@gmail.com </p>
+									</li>
+									<!-- <br>
+									<li><i class="fa-li fa fa-phone mt-1" style="color:#696969"></i><p class="mb-0" style="font-size: 17px">+34 91 101 2202 ext 4139 </p>
+									</li> -->
+								</ul>
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
 
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+		                    </div>
+		                    
+		                    
+		    			<!-- </div> -->
+	                </div>
+		            </section>
+		        	<br><br><br><br><br><br><br><br>
+					<hr class="m-0" />
+					<div class="container-fluid">
+						<p> Copyright © 2020 Elena Gutiérrez    |    Last update: January, 2021</p>
+
+					</div>
+				</div>
+			</div>
+		   
+		    <div class="col-md-3 col-xs-12 mr-0 pr-0 mb-0 pb-0">
+				<span class="d-none d-lg-block">
+			     	<header class="page-header header container-fluid">
+			     	<div class="overlay"></div>
+
+					</header>
+				</span>
+						
+		    </div>
+		</div>
+	</div>
+	  
+	
+
+
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
